@@ -24,7 +24,6 @@ public class Funcionario {
 	public void atualizarSalario(BigDecimal novoSalario) {
 		this.salario = novoSalario;
 		this.dataUltimoReajuste = LocalDate.now();
-		
 	}
 
 	public String getNome() {
@@ -65,6 +64,10 @@ public class Funcionario {
 
 	public void setDataUltimoReajuste(LocalDate dataUltimoReajuste) {
 		this.dataUltimoReajuste = dataUltimoReajuste;
+	}
+
+	public void promover(Cargo proximoCargo) {	
+		this.cargo = proximoCargo;
 	}
 
 }
